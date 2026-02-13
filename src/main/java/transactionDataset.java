@@ -2,6 +2,14 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+// Rules:
+// The Transactions dataset should have the following attributes for each transaction:
+// TransID: unique sequential number (integer) from 1 to 5,000,000 (the file has 5M transactions)
+// CustID: References one of the customer IDs, i.e., from 1 to 50,000 (on Avg. a customer has 100 trans.)
+// TransTotal: random number (float) between 10 and 1000
+// TransNumItems: random number (integer) between 1 and 10
+// TransDesc: random text of characters of length between 20 and 50 (do not include commas)
+
 public class transactionDataset {
     private static final int NUM_TRANS = 5_000_000;
     private static final int NUM_CUSTOMERS = 50000;

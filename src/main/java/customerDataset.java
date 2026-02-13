@@ -3,6 +3,15 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+// Rules:
+// The Customers dataset should have the following attributes for each customer:
+// ID: unique sequential number (integer) from 1 to 50,000 (that is the file will have 50,000 line)
+// Name: random sequence of characters of length between 10 and 20 (do not include commas)
+// Age: random number (integer) between 10 to 70
+// Gender: string that is either “male” or “female”
+// CountryCode: random number (integer) between 1 and 10
+// Salary: random number (float) between 100 and 10000
+
 public class customerDataset {
     private static final int NUM_CUSTOMERS = 50000;
     private static final Random RANDOM = new Random();
